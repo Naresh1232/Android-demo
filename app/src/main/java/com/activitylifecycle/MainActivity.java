@@ -63,15 +63,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-         AppCenter.start(getApplication(), "828f519c-f20d-4585-a32c-54e035c4d7ee", Analytics.class, Crashes.class);
-        Push.setSenderId("{448158787263}"); 
-        AppCenter.start(getApplication(), "828f519c-f20d-4585-a32c-54e035c4d7ee", Push.class);
+         
+        AppCenter.start(getApplication(), "828f519c-f20d-4585-a32c-54e035c4d7ee", Analytics.class, Crashes.class);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         Toast.makeText(getApplicationContext(),"onStart",Toast.LENGTH_SHORT).show();
+        Push.setSenderId("{448158787263}"); 
+        AppCenter.start(getApplication(), "828f519c-f20d-4585-a32c-54e035c4d7ee", Push.class);
     }
 
 
