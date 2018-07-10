@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.microsoft.appcenter.AppCenter; 
 import com.microsoft.appcenter.analytics.Analytics; 
 import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.push.Push;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -62,7 +63,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-         AppCenter.start(getApplication(), "d2152198-3e61-4a0f-a3f3-8cfe0aca4dea", Analytics.class, Crashes.class);
+         AppCenter.start(getApplication(), "828f519c-f20d-4585-a32c-54e035c4d7ee", Analytics.class, Crashes.class);
+        Push.setSenderId("{448158787263}"); 
+        AppCenter.start(getApplication(), "828f519c-f20d-4585-a32c-54e035c4d7ee", Push.class);
     }
 
     @Override
