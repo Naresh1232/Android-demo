@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+       
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(getApplicationContext(),"onCreate",Toast.LENGTH_SHORT).show();
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+         AppCenter.start(getApplication(), "4263f2b4-5c30-4855-8729-7fac4ad9841e", Analytics.class, Crashes.class);
     }
 
     @Override
