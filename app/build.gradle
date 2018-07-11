@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-androidTestCompile('com.microsoft.appcenter:appium-test-extension:1.0')
 
 android {
     compileSdkVersion 25
