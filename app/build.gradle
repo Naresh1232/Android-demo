@@ -34,3 +34,4 @@ compile "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
 compile "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 compile "com.microsoft.appcenter:appcenter-push:${appCenterSdkVersion}"
 }
+androidTestCompile('com.microsoft.appcenter:appium-test-extension:1.0')
